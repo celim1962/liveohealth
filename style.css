@@ -1,0 +1,198 @@
+    *{
+        box-sizing: border-box;
+        user-select: none;
+    }
+
+    .background{
+       background-color:   rgb(220, 220, 220);
+    }
+
+    html,body{
+        margin: 0;
+        padding: 5px;
+        min-height: 100%;
+        box-sizing: border-box;
+
+        /* background-color: rgb(70, 70, 70); */
+    }
+    .header-tool{
+        width: 100%;
+        height: 15vh;
+
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    header-tool>div,i{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        font-size: 12px;
+        text-align: center;
+        transition: all 0.3s ease;
+    }
+
+    header-tool>div,i:hover{
+        cursor: pointer;
+        color: gray;
+        transition: all 0.3s ease;
+    }
+
+
+    .header-tool {
+    /* 讓絕對定位可參考 */
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    }
+
+    .header-tool input {
+    position: absolute;
+    height: 8%;;
+    width: 10vw;
+    right: 10%;
+    width: 0;
+    opacity: 0;
+    /* padding: 5px 10px; */
+    border: none;                /* 移除所有邊框 */
+    border-bottom: 1px solid black; /* 只留底線 */
+    border-radius: 0;            /* 移除圓角 */
+    background: transparent;     /* 背景透明 */
+    outline: none;
+    transition: all 0.4s ease; /* 平滑動畫 */
+    transform: translateX(-20px); /* 往左縮回 */
+    }
+
+    .header-tool input::placeholder {
+    font-size: 12px;   /* 字體變小 */
+    color: black;       /* 顏色變淺 */
+    font-style: italic; /* 可選，加點斜體效果 */
+    }
+
+    /* 當 hover 到放大鏡時，讓 input 展開 */
+    .header-tool:has(.fa-magnifying-glass:hover) input,
+    .header-tool:has(input:hover) input {
+    width: 150px;
+    opacity: 1;
+    transform: translateX(0);
+    }
+
+    .glass-relative{
+        position: relative;
+    }
+
+
+
+
+
+
+    /* 基本樣式 */
+    .header {
+        padding: 10px 20px;
+
+        position: sticky;  /* 設定 sticky */
+        top: 0;            /* 距離視窗頂端 0 */
+        z-index: 1000; 
+    }
+
+    .header>div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .header-nav .menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+    
+    transition: .4s;
+    }
+
+    .menu li:hover{
+        color: gray;
+    }
+
+    .menu-item {
+    position: relative;
+    color: black;
+    font-size: 12px;
+    cursor: pointer;
+    
+    transition: .4s;
+    }
+
+    /* 子選單隱藏 */
+    .submenu {
+    display: none;
+    position: absolute;
+    top: 100%; /* 往下排列 */
+    left: 0;
+    background-color: #444;
+    list-style: none;
+    padding: 10px 0;
+    margin: 0;
+    min-width: 150px;
+    border-radius: 4px;
+    z-index: 1000;
+    
+    transition: .4s;
+    }
+
+    /* 子選單項目 */
+    .submenu li a {
+    display: block;
+    padding: 8px 15px;
+    color: #fff;
+    text-decoration: none;
+    
+    transition: .4s;
+    }
+
+    .submenu li:hover {
+    background-color: #555;
+    
+    transition: .4s;
+    }
+
+    /* 滑鼠 hover menu-item 時顯示子選單 */
+    .menu-item:hover .submenu {
+    display: block;
+    transition: .4s;
+    }
+
+
+
+    .imgDisplay {
+        width: 100%;
+        border-radius: 5px;
+        min-height: 140vh;       /* 最少填滿視窗 */
+        display: flex;
+        flex-direction: column;  /* 多個子元素垂直排列 */
+        justify-content: center; /* 垂直置中 */
+        align-items: center;     /* 水平置中 */
+        background-color: rgb(83, 83, 83);
+    }
+
+
+
+
+    .footer {
+        width: 100%;
+        height: 50px;
+        margin-top: 20px;
+        border-radius: 5px;
+        /* background-color: lightgray; */
+
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .footer>div{
+        width: 40%;
+    }
