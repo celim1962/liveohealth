@@ -17,23 +17,23 @@
     }
     .header-tool{
         width: 100%;
-        height: 8vh;
+        /* height: 8vh; */
 
         display: flex;
         justify-content: flex-end;
         align-items: center;
     }
 
-    header-tool>div,i{
+    .header-tool>div,i{
         display: flex;
         justify-content: flex-end;
         align-items: center;
-        font-size: 12px;
+        font-size: x-large;
         text-align: center;
         transition: all 0.3s ease;
     }
 
-    header-tool>div,i:hover{
+    .header-tool>div,i:hover{
         cursor: pointer;
         color: gray;
         transition: all 0.3s ease;
@@ -167,16 +167,17 @@
 
 
 
-    .imgDisplay {
-        width: 100%;
-        border-radius: 5px;
-        min-height: 140vh;       /* 最少填滿視窗 */
-        display: flex;
-        flex-direction: column;  /* 多個子元素垂直排列 */
-        justify-content: center; /* 垂直置中 */
-        align-items: center;     /* 水平置中 */
-        background-color: rgb(83, 83, 83);
-    }
+.imgDisplay {
+    width: 50%;
+    border-radius: 5px;
+    min-height: 77vh;
+    display: flex
+;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(83, 83, 83);
+}
 
 
 
