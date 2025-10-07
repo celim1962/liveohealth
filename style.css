@@ -165,10 +165,17 @@
     transition: .4s;
     }
 
+    .contentContainer{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+    }
 
 
-.imgDisplay {
-    width: 50%;
+.contentDisplay {
+    width: 80%;
     border-radius: 5px;
     min-height: 77vh;
     display: flex
