@@ -120,7 +120,7 @@
     .menu-item {
     position: relative;
     color: black;
-    font-size: 12px;
+    font-size: large;
     cursor: pointer;
     
     transition: .4s;
