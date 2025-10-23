@@ -27,7 +27,7 @@
             <div>
                 <h1>Livio 輕悅本身</h1>
             </div>
-            <div class="header-tool">
+            <div class="header-tool" style="visibility:hidden ;">
                 <input maxlength="100" placeholder="找商品">
                 <i class="fa-solid fa-magnifying-glass glass-relative"></i>
                 <i class="fa-solid fa-comment"></i>
@@ -64,19 +64,56 @@
 
     <div class="contentContainer">
         <div class="contentDisplay">
-            <div style="color: black;font-size: 40px;"> 
-                飲用時間: 一天建議飲用2組好輕飲<br>
-                吸收效果與反應因人而異，可試狀況調整，或諮詢專業醫師<br><br>
-
-                飲用方式<br>
-                打開即可食用，飲用後建議搭配足量溫開水<br><br>
-
-                注意事項<br>
-                1.食用產品期間，腸胃蠕動會較頻繁，若出現輕微脹氣現象，請多補充水分。<br>
-                2.成人每日建議飲用水量為2000-3000cc，食用好輕飲後，建議搭配足量溫開水。<br>
-                3.好輕飲適用於任何族群，孕婦及哺乳中媽咪建議可攜帶成分表諮詢專業醫師。<br>
-                4.奶素飲食者可安心食用。<br>
-                5.請置於陰涼乾燥及嬰幼兒不能碰觸的地方。<br>
+            <div class="accordion accordion-flush" id="accordionFlushExample" style="width: 95%;">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                            飲用時間
+                        </button>
+                    </h2>
+                    <div id="flush-collapseOne" class="accordion-collapse collapse"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            全天24小時皆可飲用
+                            一天建議飲用2組好輕飲
+                            吸收效果與反應因人而異，可試狀況調整，或諮詢專業醫師
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                            飲用方式
+                        </button>
+                    </h2>
+                    <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            打開即可食用，飲用後建議搭配足量溫開水
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseThree" aria-expanded="false"
+                            aria-controls="flush-collapseThree">
+                            注意事項
+                        </button>
+                    </h2>
+                    <div id="flush-collapseThree" class="accordion-collapse collapse"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            1.食用產品期間，腸胃蠕動會較頻繁，若出現輕微脹氣現象，請多補充水分。<br>
+                            2.成人每日建議飲用水量為2000-3000cc，食用好輕飲後，建議搭配足量溫開水。<br>
+                            3.好輕飲適用於任何族群，孕婦及哺乳中媽咪建議可攜帶成分表諮詢專業醫師。<br>
+                            4.奶素飲食者可安心食用。<br>
+                            5.請置於陰涼乾燥及嬰幼兒不能碰觸的地方。<br>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -102,7 +139,7 @@
                     <i class="fa-brands fa-line" style="color: green;"></i>
                 </div>
             </div>
-            <div>
+            <div style="visibility:hidden ;">
                 <h3>顧客服務</h3>
                 <div>退換貨政策</div>
                 <div>運送政策</div>

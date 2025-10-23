@@ -4,14 +4,17 @@
     }
 
     .background{
-       background-color:   rgb(220, 220, 220);
+       /* background-color:   rgb(220, 220, 220); */
+         background-color: white;
     }
 
     html,body{
         margin: 0;
-        padding: 5px;
+        /* padding: 5px; */
+        padding-top: 0px;
         min-height: 100%;
         box-sizing: border-box;
+        font-family: '"‘Noto Sans TC’", "‘Varela Round’", ‘微軟正黑體’, sans-serif';
 
         /* background-color: rgb(70, 70, 70); */
     }
@@ -22,8 +25,9 @@
       overflow: hidden;
       white-space: nowrap;
       background: #d35e56; /* Bootstrap body bg */
-      border-radius: .375rem;
+      /* border-radius: .375rem; */
       padding: .5rem 0;
+      color: white;
     }
 
     .marquee {
@@ -136,6 +140,8 @@
         position: sticky;  /* 設定 sticky */
         top: 0;            /* 距離視窗頂端 0 */
         z-index: 1000; 
+
+        box-shadow: 0 2px 6px 0 rgba(0, 0, 0, .06);
     }
 
     .header>div{
@@ -153,6 +159,19 @@
     
     transition: .4s;
     }
+
+    .menu li{
+        font-size: calc(15px * var(--font-size-paragraph, 1));
+    }
+
+    .menu li a{
+                color: rgb(51, 51, 51)!important;
+                text-decoration: none;
+    }
+
+        .menu li a:hover{
+            color: brown!important;
+        }
 
     .menu li:hover{
         color: gray;
@@ -173,7 +192,8 @@
     position: absolute;
     top: 100%; /* 往下排列 */
     left: 0;
-    background-color: #444;
+    /* background-color: #444; */
+    background-color: white;
     list-style: none;
     padding: 10px 0;
     margin: 0;
@@ -195,7 +215,8 @@
     }
 
     .submenu li:hover {
-    background-color: #555;
+    /* background-color: #555; */
+      background-color: white;
     
     transition: .4s;
     }
@@ -218,13 +239,16 @@
 .contentDisplay {
     width: 80%;
     border-radius: 5px;
-    min-height: 107vh;
+    min-height: 37vh;
     display: flex
 ;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #c09d9a;
+    /* background-color: #c09d9a; */
+      background-color: white;
+
+    padding: 50px 0px;
 }
 
 
