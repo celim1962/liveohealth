@@ -11,100 +11,158 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        .photoContainer {
+            padding: 15px;
+
+            display: flex;
+            justify-content: center;
+        }
+
+        img {
+            /* width: 100vw;
+            height: 50vh; */
+        }
+
+        .carouselSlide {
+            border-radius: 15px;
+            overflow: hidden;
+        }
+
+        .carousel-control-next-icon {
+            left: 20px;
+            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='black' viewBox='0 0 8 8'%3E%3Cpath d='M2 0l4 4-4 4z'/%3E%3C/svg%3E");
+        }
+
+        .carousel-control-prev-icon {
+            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='black' viewBox='0 0 8 8'%3E%3Cpath d='M6 0L2 4l4 4z'/%3E%3C/svg%3E");
+        }
+
+        /* 左箭頭移到外側 */
+        .carousel-control-prev {
+            left: -10vw;
+            /* 往左移 50px */
+            width: 5vw;
+            /* 可以調整寬度 */
+        }
+
+        /* 右箭頭移到外側 */
+        .carousel-control-next {
+            right: -10vw;
+            /* 往右移 50px */
+            width: 5;
+        }
+
+
+        .carousel-indicators {
+            list-style: none;
+            /* 移除 ol 預設數字 */
+            bottom: -10vh;
+            /* 往下移 30px，可以調整距離 */
+            justify-content: center;
+            /* 水平置中 */
+
+            
+        }
+
+        .carousel-indicators li {
+            margin-top: 15px;
+            width: 140px!important;
+            /* 圓點大小 */
+            height: 10px!important;
+            /* border-radius: 50%; */
+            /* 圓形 */
+            background-color: rgba(0, 0, 0, 0.2)!important;
+            /* 深色半透明圓點 */
+            margin: 0 6px;
+            /* 圓點間距 */
+            transition: .4s;
+        }
+
+                .carousel-indicators li:hover {
+            margin-top: 15px;
+            width: 140px!important;
+            /* 圓點大小 */
+            height: 10px!important;
+            /* border-radius: 50%; */
+            /* 圓形 */
+            background-color: rgba(0, 0, 0, 0.5)!important;
+            /* 深色半透明圓點 */
+            margin: 0 6px;
+            /* 圓點間距 */
+
+            transition: .4s;
+        }
+
+        .carousel-indicators .active {
+            background-color: rgba(0, 0, 0, 0.822)!important;
+            /* 選中圓點完全黑色 */
+            transition: .4s;
+        }
+    </style>
 </head>
 
 <body class="background">
-    <div class="marquee-wrapper">
-      <div class="marquee">
-        Livio輕悅本身 好輕飲目前嘖嘖募資中!
-      </div>
-    </div>
+    <div id="marquee"></div>
 
-    <header class="header background">
-        <div>
-            <div style="width: 150px;"></div>
-            <div>
-                <h1>Livio 輕悅本身</h1>
-            </div>
-            <div class="header-tool" style="visibility:hidden ;">
-                <input maxlength="100" placeholder="找商品">
-                <i class="fa-solid fa-magnifying-glass glass-relative"></i>
-                <i class="fa-solid fa-comment"></i>
-                <i class="fa-solid fa-user"></i>
-                <i class="fa-solid fa-cart-shopping"></i>
-            </div>
-
-        </div>
-
-
-
-        <nav class="header-nav">
-            <ul class="menu">
-                
-                <li class="menu-item"><a href="./aboutUs.html">關於Livio</a></li>
-                <li class="menu-item"><a href="./allProd.html">全站商品</a></li>
-                <li class="menu-item"><a href="./channel.html">販售通路</a></li>
-                <li class="menu-item"><a href="./usage.html">飲用方法</a></li>
-                <li class="menu-item"><a href="./faq.html">常見問題</a></li>
-                <li class="menu-item"><a href="./contact.html">聯絡我們</a></li>
-
-                <!-- <li class="menu-item">
-                    範例產品
-                    <ul class="submenu">
-                        <li><a href="#">產品 A</a></li>
-                        <li><a href="#">產品 B</a></li>
-                        <li><a href="#">產品 C</a></li>
-                    </ul>
-                </li> -->
-               
-            </ul>
-        </nav>
-    </header>
+    <div id="header"></div>
 
     <div class="contentContainer">
         <div class="contentDisplay">
-            <div style="color: white;">圖文放置區</div>
+            <div class="photoContainer">
+
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel"
+                    style="width: 30vw;height: 40%;">
+                    <ol class="carousel-indicators">
+                        <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
+                        <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
+                        <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></li>
+                        <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"></li>
+                        <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="./img/indexImg2.jpg" class="d-block w-100" alt="First slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./img/indexImg3.jpg" class="d-block w-100" alt="Second slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./img/indexImg4.jpg" class="d-block w-100" alt="Third slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./img/indexImg5.jpg" class="d-block w-100" alt="Third slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./img/indexImg1.jpg" class="d-block w-100" alt="Third slide">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+
+
+
+            </div>
         </div>
     </div>
 
-
-
-    <div class="footer background">
-        <div>
-            <div>
-                <h3>聯絡我們</h3>
-                <div>品牌名稱 / Livio輕悅本身</div>
-                <div>公司名稱 / 開創醫療器材公司</div>
-                <div>服務時間 / 周一至周五 09:00~18:00</div>
-                <div>聯繫電郵 / livio.healthcare@gmail.com</div>
-                <div style="display: flex; justify-content: space-between;">
-                    <div>客服LINE / 請掃描右方QR Code</div>
-                    <img src="./img/qrcode.jpg" style="object-fit: contain;"  alt="" />
-                </div>
-                <div>統一編號 / 94093488</div>
-                <div>
-                    <i class="fa-brands fa-facebook" style="color: blue;"></i>
-                    <i class="fa-brands fa-instagram" style="color: purple;"></i>
-                    <i class="fa-brands fa-line" style="color: green;"></i>
-                </div>
-            </div>
-            <div style="visibility:hidden ;">
-                <h3>顧客服務</h3>
-                <div>退換貨政策</div>
-                <div>運送政策</div>
-                <div>隱私權政策</div>
-            </div>
-        </div>
-
-    </div>
-
+    <div id="footer"></div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/js/bootstrap.min.js"
         integrity="sha512-EKWWs1ZcA2ZY9lbLISPz8aGR2+L7JVYqBAYTq5AXgBkSjRSuQEGqWx8R1zAX16KdXPaCjOCaKE8MCpU0wcHlHA=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-
+    <script src="./loadFile.js"></script>
 </body>
 
 

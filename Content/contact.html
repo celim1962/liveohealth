@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en" class="background">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>liveohealth Demo</title>
+    <meta name="google" content="notranslate">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        .contentDisplay {
+            display: none;
+        }
+
+        .ContactInfoContainer {
+            min-height: 50vh;
+            display: flex;
+            justify-content: center;
+        }
+
+        .ContactInfo {
+            width: 70%;
+
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .info {
+            width: 25%;
+            height: 100%;
+        }
+
+        .info>div:nth-child(n) {
+            font-weight: 100;
+            font-size: large;
+        }
+
+        .info>div:nth-child(1) {
+            font-weight: bold;
+            font-size: xxx-large;
+            margin-bottom: 10px;
+        }
+
+        .btnLineFriend {
+            background-color: #716058;
+            color: white;
+            width: 100%;
+            text-align: center;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body class="background">
+    <div id="marquee"></div>
+    <div id="header"></div>
+    <div class="contentContainer">
+        <div class="contentDisplay">
+            <div style="color: white;">圖文放置區</div>
+        </div>
+    </div>
+    <div class="ContactInfoContainer">
+        <div class="ContactInfo">
+            <div class="info">
+                <div>Line官方客服</div>
+                <br><br>
+                <div>如需產品諮詢或訂單修改服務<br>全清小幫手都會在LINE為您提供一對一服務!<br><br>我們也會在上面推播優惠訊息，歡迎加入，避免錯過好康喔!</div>
+                <br><br><br>
+
+                <div style="display: flex; justify-content: space-between;">
+                    <div>客服LINE / 請掃描右方QR Code</div>
+                    <img src="./img/qrcode.jpg" style="object-fit: contain;" alt="" />
+                </div>
+                <div>服務時間 / 周一至周五 09:00~18:00</div>
+                <br>
+                <div>
+                    <label for="btn_LineFriend" class="btnLineFriend">LINE線上客服</label>
+                    <input type="button" value="" id="btn_LineFriend" hidden />
+                </div>
+                <br>
+                <br>
+            </div>
+            <div class="info">
+                <div>E-mail</div>
+                <br><br>
+                <div>產品與購買相關疑問、建議、商務洽談、行銷合作等相關需求，歡迎E-mail至以下信箱:
+                    <br>
+                    <br><a href="">tw@allklear.com</a>
+                    <br><a href="">livio.healthcare@gmail.com</a>
+                    <br><a href="">Facebook粉絲專頁</a>
+                    <br><a href="">IG</a>
+                    <br><a href="">Threads</a>
+                </div>
+            </div>
+            <div class="info">
+                <div>公司資訊</div>
+                <br><br>
+
+                <div>開創醫療器材有限公司<br>
+                    <div>統一編號 / 94093488</div>
+                </div>
+                <br>
+                <br>
+            </div>
+        </div>
+    </div>
+    <div id="footer"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/js/bootstrap.min.js"
+        integrity="sha512-EKWWs1ZcA2ZY9lbLISPz8aGR2+L7JVYqBAYTq5AXgBkSjRSuQEGqWx8R1zAX16KdXPaCjOCaKE8MCpU0wcHlHA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="../loadFile.js"></script>
+</body>
+
+
+</html>
