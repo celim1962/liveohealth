@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="../style.css">
     <style>
         .photoContainer {
-            padding: 15px;
+            /* padding: 15px; */
 
             display: flex;
             justify-content: center;
@@ -23,6 +23,11 @@
         img {
             /* width: 100vw;
             height: 50vh; */
+        }
+
+        .carousel {
+            /* border: 1px solid blue; */
+            width: 100%;
         }
 
         .carouselSlide {
@@ -58,36 +63,36 @@
         .carousel-indicators {
             list-style: none;
             /* 移除 ol 預設數字 */
-            bottom: -10vh;
+            bottom: -10vh !important;
             /* 往下移 30px，可以調整距離 */
             justify-content: center;
             /* 水平置中 */
 
-            
+
         }
 
         .carousel-indicators li {
             margin-top: 15px;
-            width: 140px!important;
+            width: 140px !important;
             /* 圓點大小 */
-            height: 10px!important;
+            height: 10px !important;
             /* border-radius: 50%; */
             /* 圓形 */
-            background-color: rgba(0, 0, 0, 0.2)!important;
+            background-color: rgba(0, 0, 0, 0.2) !important;
             /* 深色半透明圓點 */
             margin: 0 6px;
             /* 圓點間距 */
             transition: .4s;
         }
 
-                .carousel-indicators li:hover {
+        .carousel-indicators li:hover {
             margin-top: 15px;
-            width: 140px!important;
+            width: 140px !important;
             /* 圓點大小 */
-            height: 10px!important;
+            height: 10px !important;
             /* border-radius: 50%; */
             /* 圓形 */
-            background-color: rgba(0, 0, 0, 0.5)!important;
+            background-color: rgba(0, 0, 0, 0.5) !important;
             /* 深色半透明圓點 */
             margin: 0 6px;
             /* 圓點間距 */
@@ -96,9 +101,79 @@
         }
 
         .carousel-indicators .active {
-            background-color: rgba(0, 0, 0, 0.822)!important;
+            background-color: rgba(0, 0, 0, 0.822) !important;
             /* 選中圓點完全黑色 */
             transition: .4s;
+        }
+
+
+        @media screen and (max-width: 768px) {
+            .carousel {
+                /* border: 1px solid blue; */
+                width: 90%;
+                margin-bottom: 10vh;
+            }
+
+            .contentDisplay {
+                width: 90% !important;
+                border-radius: 5px;
+                min-height: 37vh;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                /* background-color: #c09d9a; */
+                background-color: white;
+
+                padding: 0px !important;
+            }
+
+
+            .carousel-indicators {
+                list-style: none;
+                /* 移除 ol 預設數字 */
+                bottom: -10vh !important;
+                /* 往下移 30px，可以調整距離 */
+                justify-content: center;
+                /* 水平置中 */
+
+
+            }
+
+            .carousel-indicators li {
+                margin-top: 15px;
+                width: 140px !important;
+                /* 圓點大小 */
+                height: 10px !important;
+                /* border-radius: 50%; */
+                /* 圓形 */
+                background-color: rgba(0, 0, 0, 0.2) !important;
+                /* 深色半透明圓點 */
+                margin: 0 6px;
+                /* 圓點間距 */
+                transition: .4s;
+            }
+
+            .carousel-indicators li:hover {
+                margin-top: 15px;
+                width: 140px !important;
+                /* 圓點大小 */
+                height: 10px !important;
+                /* border-radius: 50%; */
+                /* 圓形 */
+                background-color: rgba(0, 0, 0, 0.5) !important;
+                /* 深色半透明圓點 */
+                margin: 0 6px;
+                /* 圓點間距 */
+
+                transition: .4s;
+            }
+
+            .carousel-indicators .active {
+                background-color: rgba(0, 0, 0, 0.822) !important;
+                /* 選中圓點完全黑色 */
+                transition: .4s;
+            }
         }
     </style>
 </head>
@@ -112,8 +187,7 @@
         <div class="contentDisplay">
             <div class="photoContainer">
 
-                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel"
-                    style="width: 30vw;height: 40%;">
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
                     <ol class="carousel-indicators">
                         <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
                         <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>

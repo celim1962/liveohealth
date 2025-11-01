@@ -24,14 +24,14 @@
         }
 
         .ContactInfo {
-            width: 70%;
+            width: 80%;
 
             display: flex;
             justify-content: space-between;
         }
 
         .info {
-            width: 25%;
+            width: 30%;
             height: 100%;
         }
 
@@ -42,7 +42,7 @@
 
         .info>div:nth-child(1) {
             font-weight: bold;
-            font-size: xxx-large;
+            font-size: x-large;
             margin-bottom: 10px;
         }
 
@@ -53,6 +53,24 @@
             text-align: center;
             padding: 10px 20px;
             border-radius: 5px;
+        }
+
+        .btnLineFriend:hover {
+            cursor: pointer;
+        }
+
+
+        @media screen and (max-width: 768px) {
+
+            .ContactInfo {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+
+            .info {
+                width: 100%;
+            }
         }
     </style>
 </head>
@@ -69,43 +87,43 @@
         <div class="ContactInfo">
             <div class="info">
                 <div>Line官方客服</div>
-                <br><br>
+
                 <div>如需產品諮詢或訂單修改服務<br>全清小幫手都會在LINE為您提供一對一服務!<br><br>我們也會在上面推播優惠訊息，歡迎加入，避免錯過好康喔!</div>
-                <br><br><br>
+                <br>
 
                 <div style="display: flex; justify-content: space-between;">
-                    <div>客服LINE / 請掃描右方QR Code</div>
-                    <img src="./img/qrcode.jpg" style="object-fit: contain;" alt="" />
+                    <div>客服LINE / <a href="https://lin.ee/HojIuOq"><img
+                                src="https://scdn.line-apps.com/n/line_add_friends/btn/zh-Hant.png" alt="加入好友"
+                                height="36"></a></div>
                 </div>
                 <div>服務時間 / 周一至周五 09:00~18:00</div>
                 <br>
-                <div>
-                    <label for="btn_LineFriend" class="btnLineFriend">LINE線上客服</label>
-                    <input type="button" value="" id="btn_LineFriend" hidden />
-                </div>
                 <br>
-                <br>
+
             </div>
             <div class="info">
                 <div>E-mail</div>
-                <br><br>
+
                 <div>產品與購買相關疑問、建議、商務洽談、行銷合作等相關需求，歡迎E-mail至以下信箱:
-                    <br>
-                    <br><a href="">tw@allklear.com</a>
                     <br><a href="">livio.healthcare@gmail.com</a>
-                    <br><a href="">Facebook粉絲專頁</a>
-                    <br><a href="">IG</a>
-                    <br><a href="">Threads</a>
+
                 </div>
+                <br>
             </div>
             <div class="info">
                 <div>公司資訊</div>
-                <br><br>
 
                 <div>開創醫療器材有限公司<br>
                     <div>統一編號 / 94093488</div>
+                    <div>聯絡電話 / 0978-808613</div>
+                    <div>地址 / 新北市土城區中央路二段191號8樓之4</div>
                 </div>
                 <br>
+                <div>
+                    <a href="https://reurl.cc/WOjzqL"><i class="fa-brands fa-facebook" style="color: blue;"></i></a>
+                    <a href="https://lin.ee/Duel392"><i class="fa-brands fa-line" style="color: green;"></i></a>
+                    <a href="https://reurl.cc/3MGyYl"><i class="fa-brands fa-instagram" style="color: purple;"></i></a>
+                </div>
                 <br>
             </div>
         </div>
