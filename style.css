@@ -3,6 +3,11 @@
         user-select: none;
     }
 
+    .logoImg{
+        max-height: 50px;
+        width: auto;
+    }
+
     .background {
         /* background-color:   rgb(220, 220, 220); */
         background-color: white;
@@ -378,4 +383,8 @@
             display: none !important;
         }
 
+        .logoImg{
+            max-height: 80px;
+            width: auto;
+    }
     }
